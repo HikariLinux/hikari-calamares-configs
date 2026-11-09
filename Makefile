@@ -13,9 +13,9 @@ install:
 	cp -r calamares/* $(DESTDIR)$(PREFIX)/share/calamares/
 
 uninstall:
-	rm -f $(addprefix $(DESTDIR)$(PREFIX)/bin/,$(SCRIPTS))
+	rm -f $(addprefix $(DESTDIR)$(PREFIX)/bin/,$(notdir $(SCRIPTS)))
 	rm -f $(addprefix $(DESTDIR)$(PREFIX)/lib/systemd/system/,$(UNITS))
 	rm -f $(addprefix $(DESTDIR)$(PREFIX)/lib/systemd/system/multi-user.target.wants/,$(MULTI_USER_WANTS))
-	rm -rf $(DESTDIR)$(PREFIX)/share/calamares/{branding/hikari,settings.conf,modules}
+	rm -rf $(addprefix $(DESTDIR)$(PREFIX)/share/calamares/,branding/hikari settings.conf modules)
 
 .PHONY: install uninstall
