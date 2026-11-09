@@ -8,7 +8,7 @@
 # Additional styling can be done using the stylesheet.qss
 # file, also in the branding directory.
 ---
-componentName:  asahi
+componentName:  hikari
 
 
 ### WELCOME / OVERALL WORDING
@@ -121,17 +121,17 @@ navigation: widget
 # are visible as buttons there if the corresponding *show* keys
 # are set to "true" (they can also be overridden).
 strings:
-    productName:         Asahi Linux
-    shortProductName:    Asahi Linux
+    productName:         Hikari Linux
+    shortProductName:    Hikari Linux
     #version:             2020.2 LTS
     #shortVersion:        2020.2
-    versionedName:       Asahi Linux
-    shortVersionedName:  Asahi Linux
-    productUrl:          https://asahilinux.org/
-    supportUrl:          https://github.com/AsahiLinux/docs/wiki
-    #knownIssuesUrl:      https://github.com/AsahiLinux/docs/issues
+    versionedName:       Hikari Linux
+    shortVersionedName:  Hikari Linux
+    productUrl:          https://github.com/HikariLinux
+    supportUrl:          https://github.com/HikariLinux/hikari-calamares-configs/issues
+    #knownIssuesUrl:      https://github.com/HikariLinux/hikari-calamares-configs/issues
     #releaseNotesUrl:     https://calamares.io/news/
-    donateUrl:           https://asahilinux.org/support/
+    donateUrl:           ""
 
 # These images are loaded from the branding module directory.
 #
@@ -162,10 +162,10 @@ strings:
 # These filenames can also use substitutions from os-release (see above).
 images:
     # productBanner:       "banner.png"
-    productIcon:         "AsahiLinux_logomark.svg"
-    productLogo:         "AsahiLinux_logomark.svg"
+    productIcon:         "hikari-linux.svg"
+    productLogo:         "hikari-linux.svg"
     # productWallpaper:    "wallpaper.png"
-    productWelcome:      "AsahiLinux_laptop.svg"
+    productWelcome:      "hikari-linux.svg"
 
 # Colors for text and background components.
 #
@@ -182,7 +182,7 @@ style:
    sidebarBackground:    "#2c2c2c"
    sidebarText:          "#FFFFFF"
    sidebarTextSelect:    "#2c2c2c"
-   sidebarTextHighlight: "#d3506f"
+   sidebarTextHighlight: "#F0AB62"
 
 ### SLIDESHOW
 #
@@ -203,7 +203,7 @@ style:
 # To configure images, like the filenames (here, as an inline list):
 #   slideshow: [ "/etc/calamares/slideshow/0.png", "/etc/logo.png" ]
 #slideshow:               "show.qml"
-slideshow: ["AsahiLinux_laptop.svg"]
+slideshow: ["hikari-linux.svg"]
 
 # There are two available APIs for a QML slideshow:
 #  - 1 (the default) loads the entire slideshow when the installation-

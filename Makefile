@@ -16,6 +16,6 @@ uninstall:
 	rm -f $(addprefix $(DESTDIR)$(PREFIX)/bin/,$(SCRIPTS))
 	rm -f $(addprefix $(DESTDIR)$(PREFIX)/lib/systemd/system/,$(UNITS))
 	rm -f $(addprefix $(DESTDIR)$(PREFIX)/lib/systemd/system/multi-user.target.wants/,$(MULTI_USER_WANTS))
-	rm -rf $(DESTDIR)$(PREFIX)/share/calamares/{branding/asahi,settings.conf,modules}
+	rm -rf $(DESTDIR)$(PREFIX)/share/calamares/{branding/hikari,settings.conf,modules}
 
 .PHONY: install uninstall
